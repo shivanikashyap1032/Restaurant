@@ -1,0 +1,272 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+.form {
+	width: 30vw;
+	border: 1px solid #dbdbdb;
+	border-radius: 20px;
+	background-color: white;
+}
+
+.form h2 {
+	color: #1F63EA;
+}
+
+.form img {
+	margin-left: 10vw;
+}
+
+.white {
+	border-color: white;
+	color: white;
+}
+
+.white:hover {
+	background-color: white;
+	color: blue;
+}
+
+.adminMainDiv {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	background-color: #F5F5F5;
+	overflow: hidden;
+}
+
+.rightFlex {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 25vw;
+}
+
+.adminDetail {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 25vh;
+	width: 25vw;
+	background-color: #1F63EA;
+	gap: 4vh;
+	color: white;
+}
+
+.adminSideBar {
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+	height: 75vh;
+	width: 25vw;
+	height: 75vh;
+}
+
+.sideBarFirst {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 5vh 0 0 2vw;
+	width: 21vw;
+	height: 50vh;
+	background-color: white;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+	gap: 1.5vh;
+}
+
+.sideBarFirst button {
+	width: 15vw;
+}
+
+.core {
+	position: relative;
+	height: 100vh;
+	width: 75vw;
+	margin-top: 10vh;
+}
+
+.orderHeading {
+	position: absolute;
+	left: 42%;
+}
+
+.coreToggle {
+	display: none;
+}
+
+.logo {
+	height: 50px;
+	width: 75vw;
+	background-color: #1F63EA;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+.logo h2, h4 {
+	color: white;
+	z-index: 10;
+	font-family: 'Gloock', serif;
+	margin-top: 5px;
+}
+
+.coreMain {
+	position:relative;
+	width: 75vw;
+	min-height: 88vh;
+}
+
+.drop-downList {
+	position: relative;
+	display: inline-block;
+}
+
+.drop-downBtn {
+	background-color: white;
+	color: #1F63EA;
+	justify-content: center;
+	align-items: center; 
+	border: 2px solid #dbdbdb;
+	font-size: 16px;
+	width: 70vw;
+	margin: 2vh 2.5vw;
+	height: 5vh;
+	transition:0.5s;
+}
+
+.orderBtns {
+	width: 15vw;
+}
+
+.drop-downContent {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	width: 70vw;
+	height:75vh;
+	margin: -2vh 2.5vw;
+	z-index: 1;
+	overflow-y:auto;
+	overflow-x: hidden; 
+}
+
+.order-list{
+	position:relative;
+	border: 1px solid black;
+	height: 20vh;
+	z-index: 1;
+}
+
+.booking-list {
+	position:relative;
+	border: 1px solid black;
+	height: 25vh;
+	z-index: 1;
+}
+
+.orders{
+	background-color: #f1f1f1;
+	position:relative;
+	border: 1px solid black;
+	height: 20vh;
+	z-index: 1;
+}
+
+.orders{
+	background-color: #f1f1f1;
+	position:relative;
+	border: 1px solid black;
+	height: 25vh;
+	z-index: 1;
+}
+
+.drop-downList:hover .drop-downBtn {
+	background-color: #1F63EA;
+	color: white;
+}
+
+/*This is scroller*/
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #1F63EA;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #b30000;
+}
+/*End of scroller*/
+
+/*bookings page admin*/
+.cancelBtnBooking {
+	height: 4vh;
+	width: 8vw;
+	letter-spacing: 0.1em;
+	transition:0.5s;
+	border-radius: 15px;
+	background-color: #f5f5f5;
+	color: red;
+	border: 1px solid red;
+}
+
+.cancelBtnBooking:hover {
+	letter-spacing: 0.25em;
+	background-color: red;
+	color: white;
+	border: 1px solid white;
+}
+
+.approveBtnBooking {
+	height: 4vh;
+	width: 8vw;
+	letter-spacing: 0.1em;
+	transition:0.5s;
+	border-radius: 15px;
+	background-color: #f5f5f5;
+	color: #173ADE;
+	border: 1px solid #173ADE;
+}
+
+.approveBtnBooking:hover {
+	letter-spacing: 0.25em;
+	background-color: #173ADE;
+	color: white;
+	border: 1px solid white;
+}
+
+.bookingsCore {
+	position: relative;
+	width: 70vw;
+	height: 88vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.bookingsDetails {
+	position: relative;
+	height: 88vh;
+	width: 70vw;
+}
+
+.bookingsDetailslist {
+	position: relative;
+	height: 20vh;
+	width: 68vw;
+	margin: 2vh 1vw 1vh 1vw;
+	border: 1px solid #dbdbdb;
+}	

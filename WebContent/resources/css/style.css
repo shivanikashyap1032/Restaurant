@@ -1,0 +1,933 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+/*E52131*/
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+.mainDiv {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	background-color: #F5F5F5;
+	overflow: hidden;
+}
+
+.white {
+	position:relative;
+	background-color: white;
+	border-radius: 10px;
+	color: #1F63EA;
+	width: 10vw;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 5vh; 
+	transition : .5s;
+	letter-spacing: 0.1em;
+	border: 1px solid #1F63EA;
+}
+
+.white:hover {
+	box-shadow: 5px 5px 5px white;
+	letter-spacing: 0.25em;
+	left: -5px;
+	top: -5px;
+	transition : .5s;
+}
+
+.blue {
+	position:relative;
+	background-color: #1F63EA;
+	border-radius: 10px;
+	color: white;
+	width: 10vw;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 5vh; 
+	transition : .5s;
+	letter-spacing: 0.1em;
+	border: 1px solid white;
+}
+
+.blue:hover {
+	box-shadow: 5px 5px 5px #1F63EA;
+	letter-spacing: 0.25em;
+	left: -5px;
+	top: -5px;
+	transition : .5s;
+}
+
+.formBar {
+	height: 93vh;
+	background-color: #1F63EA;
+	width: 30vw;
+	margin-left: 0vh;
+}
+
+.form {
+	margin-top:10vh;
+	width: 25vw;
+	height: 50vh;
+	margin-left: 2vw;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.editBar {
+	height: 60vh;
+	width: 50vw;
+	margin-left: 25vw;
+	margin-top: 20vh;
+	background-color: white;
+	border: 2px solid #1F63EA;
+	border-radius: 10px;
+}
+
+.editFrom {
+	margin-top:5vh;
+	margin-left:-1vw;
+	width: 50vw;
+	height: 50vh;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.rightFlex {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 25vw;
+}
+
+.userDetail {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 25vh;
+	width: 25vw;
+	background-color: #1F63EA;
+	gap: 4vh;
+}
+
+@keyframes animate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.Loggeduser{
+	position:relative;
+	background: white;
+	width: 15vw;
+	height: 15vh;
+	border-radius:10px;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.Loggeduser p {
+	z-index: 10;
+	position: absolute;
+	top: 3%;
+	left: 3%;
+	letter-spacing: 0.25em;
+	color: white;
+}
+
+.Loggeduser::before {
+  content: '';
+  position: absolute;
+  width: 20vw;
+  height: 10vh;
+  background: red;
+  animation: animate 3s linear infinite;
+}
+
+.Loggeduser::after {
+  content: '';
+  position: absolute;
+  background-color: #1F63EA;
+  border-radius:9px;
+  height: 98%;
+  width: 98%;
+}
+
+.Loggeduser span {
+	font-size:3vh;
+	font-weight: 600;
+	margin-left:1vw;	
+	display: inline-block;
+	padding: 10px;
+	color: white;
+	position: relative;
+  	z-index: 10;
+}
+
+.Loggeduser span::before {
+  content: "Mr.";
+  display: inline;
+  margin-right: 5px;
+}
+
+.Loggeduser span::after {
+  content: "have a foddie day";
+  display: block;
+  font-size: 2vh;
+  letter-spacing:0.25em;
+  position:absolute;
+  left: -2.2vw;
+  top:7.8vh;
+  width: 170%;
+}
+
+.userDetail a {
+	position: relative;
+	display: block;
+	width: 15vw;
+	border-radius: 30px;
+	text-decoration: none;
+	color: white;
+	border: 2px solid white;
+	font-weight: 400;
+	text-transform:uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	transition: 0.5s;
+	height: 6vh;
+	padding: 0.8vh 5vw;
+}
+
+.userDetail a:hover {
+	background-color: #F5F5F5;
+	color: #1F63EA;
+	letter-spacing: 0.25em;
+}
+
+.userDetail a:before {
+	content: '';
+	position: absolute;
+	color: #F5F5F5;
+	inset: 5px;
+}
+
+.userDetail a i {
+	position: absolute;
+	inset: 0;
+	display: block;
+}
+
+.userDetail a i::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 70%;
+	width: 20px;
+	height: 2px;
+	background-color: #1F63EA;
+	margin-top: -2px;
+	transform: translateX(-50%) skewX(325deg);
+	transition: 0.5s;
+}
+
+.userDetail a:hover i::before {
+	width: 40px;
+	left: 20%;
+}
+
+.userDetail a i::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 20%;
+	width: 20px;
+	height: 2px;
+	background-color: #1F63EA;
+	margin-bottom: -2px;
+	transform: translateX(-50%) skewX(325deg);
+	transition: 0.5s;
+}
+
+.userDetail a:hover i::after {
+	width: 40px;
+	left: 70%;
+}
+
+.sideBar {
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+	height: 75vh;
+	width: 25vw;
+	height: 75vh;
+}
+
+.sideBarFirst {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 5vh 0 0 2vw;
+	width: 21vw;
+	height: 30vh;
+	background-color: white;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+	gap: 1.5vh;
+}
+
+.sideBarFirst button {
+	width: 15vw;
+	position: relative;
+	background-color: #F5F5F5;
+	color: var(--clr);
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	padding: 10px 30px;
+	transition: 0.5s;
+	border-radius: 5px;
+	border-color: var(--clr);
+}
+
+.sideBarFirst button:hover {
+	background-color: var(--clr);
+	color: #F5F5F5;
+	letter-spacing: 0.25em;
+	box-shadow: 5px 9px 10px var(--clr);
+}
+
+.sideBarFirst button:before {
+	content: '';
+	position: absolute;
+	color: var(--clr);
+	inset: 5px;
+}
+
+.sideBarFirst button i {
+	position: absolute;
+	inset: 0;
+	display: block;
+}
+
+.sideBarFirst button i::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 70%;
+	width: 20px;
+	height: 2px;
+	background-color: #F5F5F5;
+	margin-top: -2px;
+	transform: translateX(-50%) skewX(325deg);
+	transition: 0.5s;
+}
+
+.sideBarFirst button:hover i::before {
+	width: 40px;
+	left: 20%;
+}
+
+.sideBarFirst button i::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 20%;
+	width: 20px;
+	height: 2px;
+	background-color: #F5F5F5;
+	margin-bottom: -2px;
+	transform: translateX(-50%) skewX(325deg);
+	transition: 0.5s;
+}
+
+.sideBarFirst button:hover i::after {
+	width: 40px;
+	left: 70%;
+}
+
+.sideBarSecond {
+	position:relative;
+	margin: 5vh 0 0 2vw;
+	width: 21vw;
+	height: 33vh;
+	background-color: white;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap:1vh;
+}
+
+.sideBarSecond button {
+	transform:translate(-1% , -1%);
+	position:relative;
+	font-weight:500;
+	letter-spacing:0.2em;
+	width: 15vw;
+	text-transform: uppercase;
+	height: 5vh;
+	transition:0.5s;
+	color: white;
+	overflow: hidden;
+	border-radius: 1vh;
+	background-color: #1F63EA;
+	border: 2px solid #FF8000;
+}
+
+.sideBarSecond button::before,
+.sideBarSecond button::after,
+.sideBarSecond span::before,
+.sideBarSecond span::after {
+	content: '';
+	position: absolute;
+	width: 25%;
+	height: 100%;
+	background-color: #FF8000;
+	z-index: -1;
+	transition: .5s;
+}
+
+.sideBarSecond button::before {
+	top: 0;
+	left: -25%;
+}
+
+.sideBarSecond button:hover:before {
+	top: 0;
+	left: 0;
+}      
+
+.sideBarSecond button::after {
+	top: 0;
+	right: -25%;
+}
+
+.sideBarSecond button:hover:after {
+	top: 0;
+	right: 0;
+}
+
+.sideBarSecond span::before {
+	left: 25%;
+	bottom: -100%;
+}
+
+.sideBarSecond button:hover span::before {
+	left: 25%;
+	bottom: 0;
+}
+
+.sideBarSecond span::after {
+	left: 50%;
+	top: -100%;
+}
+
+.sideBarSecond button:hover span::after {
+	left: 50%;
+	top: 0;
+}
+
+.sideBarSecond button:hover {
+	border: 2px solid #1F63EA;
+	box-shadow: 7px 7px 10px #1F63EA;
+}
+
+.Core {
+	height: 100vh;
+	width: 50vw;
+	margin-top: 10vh;
+}
+
+.coreToggle {
+	display: none;
+}
+
+.logo {
+	height: 50px;
+	width: 50vw;
+	background-color: #1F63EA;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+.logoCart {
+	height: 50px;
+	width: 25vw;
+	background-color: #1F63EA;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+.logo h2, h4 {
+	color: white;
+	z-index: 10;
+	font-family: 'Gloock', serif;
+	margin-top: 5px;
+}
+
+.logoCart h2, h4 {
+	color: white;
+	z-index: 10;
+}
+
+.coreMain {
+	margin: 2px 2vw 0;
+	width: 46vw;
+	min-height: 88vh;
+}
+
+.aboutUs {
+	background-color: white;
+	margin: 2vh 0;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+}
+
+.bookTable {
+	margin: 2vh 0;
+	background-color: white;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+	height: 87vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.sliderImg {
+	position: relative;
+	background-color: #dbdbdb;
+	height: 28vh;
+	width: 44vw;
+	margin: 0 1vw;
+	overflow: hidden;
+	margin-top: 2vh;
+}
+
+.givePriority {
+  z-index: 1;
+}
+
+.img1 {
+  position: absolute;
+  height: 28vh;
+  width: 44vw;
+  left: 0%;
+  transition: 3s;
+}
+
+.img2 {
+  position: absolute;
+  height: 28vh;
+  width: 44vw;
+  left: 100%;
+  transition: 3s;
+}
+
+.img3 {
+  position: absolute;
+  height: 28vh;
+  width: 44vw;
+  left: -100%;
+  transition: 3s;
+}
+
+.selectTime {
+	display: flex;
+}
+
+.selectTime select {
+	width: 21vw;
+}
+
+.search {
+	width: 30vw;
+	margin-left: 8vw;
+	background-color: white;
+}
+
+.menu {
+	margin-top: 2vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 70vh;
+	border-radius: 5px;
+	border: 1px solid #dbdbdb;
+	background-color: white;
+}
+
+.selectFood {
+	position:relative;
+	margin-top: 5px;
+	background-color: white;
+	height: 10vh;
+	border: 1px solid #dbdbdb;
+	padding: 2vh 2vw;
+	border-radius: 10px;
+	overflow: auto;
+	overflow-y: hidden;
+	display: flex;
+	align-items: center;
+}
+
+.selectFood button {
+	position:relative;
+	border-radius: 25px;
+	height: 5vh;
+	padding: 0 3vw;
+	border: 1px solid #1F63EA;
+	background-color: white;
+	transition:.7s;
+	color: #1F63EA;
+}
+
+.selectFood button:hover {
+	color: white;
+	background-color: #1F63EA;
+}
+
+.crossBtn{
+	position: absolute;
+	top:0;
+	right:0;
+	color: #1F63EA;
+	margin-right: 0.5vw;
+	display: block;
+}
+
+.selectFood button:hover .crossBtn {
+	color: white;
+}
+
+.crossBtnClose{
+	display: none;
+}
+
+.myCard {
+}
+
+.myCardHide {
+	display: none;
+}
+
+.myCard h6, h5 {
+	display: inline;
+}
+
+.myCard a {
+	float: right;
+}
+
+.rightBtn {
+	float: right;
+}
+
+.cartBtn {
+	margin-top: -2.3vh;
+}
+
+.cart {
+	margin-top: 10vh;
+	height: 88vh;
+	width: 25vw;
+}
+
+.myCart {
+	margin: 10vh 1vw 0;
+	height: 85vh;
+	border-radius: 5px;	
+	border: 1px solid #dbdbdb;
+	background-color: white;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/*This is scroller*/
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #1F63EA;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #b30000;
+}
+/*End of scroller*/
+
+.navLogo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #1F63EA;
+  justify-content:center;
+  text-align: center;
+   display: flex;
+  z-index: 1;
+}
+
+.navLogo h2 {
+ position: fixed;
+  color: white;
+   z-index: 1;
+   margin-top: 1vh;
+   font-family: 'Gloock', serif;
+   font-weight: 200;
+   font-size: 5vh;
+}
+
+.ordersMainDiv {
+  margin-top: 50px;
+  display: flex;
+  flex-direction:column;
+  display: relative;
+  width: 100vw;
+  height: 92.3vh;
+  background-color: #F5F5F5;
+  justify-content: center;
+  align-items: center;
+}
+
+.orderFlex {
+	position:relative;
+	display: flex;
+	width: 100vw;
+	height: 80vh;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+	gap: 2vw;
+}
+
+.completedOrders{
+	height: 78vh;
+	width: 30vw;
+	background-color: #F5F5F5;
+	overflow-y:auto;
+	overflow-x:hidden;  
+}
+
+.completedOrders h4{
+	margin-left: 30%;
+	color: black;
+}
+
+.pendingOrders{
+	height: 78vh;
+	width: 30vw;
+	background-color: #F5F5F5;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.pendingOrders h4{
+	margin-left: 30%;
+	color: black;
+}
+
+.cancelledOrders{
+	height: 78vh;
+	width: 30vw;
+	background-color: #F5F5F5;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.cancelledOrders h4{
+	margin-left: 30%;
+	color: black;
+}
+
+.orderCard {
+  position:relative;
+  width: 25vw;
+  margin: 2vh 2.5vw 0;
+  height: 25vh;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  color: black;
+}
+
+.cardDate {
+	float: right;
+}
+
+.cardStatus {
+	margin: 0 8vw; 
+}
+
+.orderEmpty{
+	margin-top: 100px;
+}
+
+/*order drop down list*/
+
+.userOrders {
+	margin: 2vh 15vw;
+	height: 90vh;
+	width: 70vw;
+	overflow: hidden;
+}
+
+.drop-downList {
+	position: relative;
+	display: inline-block;
+}
+
+.drop-downBtn {
+	background-color: white;
+	color: #1F63EA;
+	justify-content: center;
+	align-items: center; 
+	border: 2px solid #dbdbdb;
+	font-size: 16px;
+	width: 70vw;
+	height: 5vh;
+	transition:0.5s;
+}
+
+.orderBtns {
+	width: 15vw;
+}
+
+.drop-downContent {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	width: 70vw;
+	height:50vh;
+	z-index: 1;
+	overflow: auto;
+	overflow-y:auto;
+	overflow-x: hidden;
+	transition : 0.5s; 
+}
+
+.order-list{
+	position:relative;
+	border: 1px solid black;
+	height: 20vh;
+	z-index: 1;
+}
+
+.booking-list {
+	position:relative;
+	border: 1px solid black;
+	height: 25vh;
+	z-index: 1;
+}
+
+.orders{
+	background-color: #f1f1f1;
+	position:relative;
+	border: 1px solid black;
+	height: 22vh;
+	z-index: 1;
+}
+
+.drop-downList:hover .drop-downBtn {
+	background-color: #1F63EA;
+	color: white;
+}
+
+/*booking page*/
+.bookingsBar {
+	position: relative;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+}
+
+.userDetailsBooking {
+	color: white;
+}
+
+.bookingsCore {
+	position: relative;
+	width: 80vw;
+	height: 93vh;
+	overflow: auto;
+}
+
+.bookingsDetails {
+	position: relative;
+	height: 88vh;
+	width: 80vw;	
+}
+
+.bookingsDetailslist {
+	position: relative;
+	height: 15vh;
+	width: 78vw;
+	margin: 2vh 1vw 1vh 1vw;
+	border: 1px solid #dbdbdb;
+}	
+
+.cancelBtnBooking {
+	height: 4vh;
+	width: 8vw;
+	letter-spacing: 0.1em;
+	transition:0.5s;
+	border-radius: 15px;
+	background-color: #f5f5f5;
+	color: red;
+	border: 1px solid red;
+}
+
+.cancelBtnBooking:hover {
+	letter-spacing: 0.25em;
+	background-color: red;
+	color: white;
+	border: 1px solid white;
+}
+
+.orderNowForm {
+	width: 30vw; 
+	height:80vh; 
+	background-color: white; 
+	margin-left: 25vw; 
+	margin-top: 5vh; 
+	overflow: auto
+}
+
+.confirmOrderBtn {
+	border-radius: 15px;
+	width: 20vw;
+	height: 5vh;
+	background-color: #1F63EA;
+	color: white;
+	transition : 0.5s;
+	border: 1px solid white;
+}
+
+.confirmOrderBtn:hover {
+	background-color: white;
+	color: #1F63EA;
+	border: 1px solid #1F63EA;
+}

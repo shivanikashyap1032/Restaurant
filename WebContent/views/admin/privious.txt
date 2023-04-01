@@ -1,0 +1,187 @@
+<!-- 
+//commented code
+<% 
+System.out.println("this run");
+	OrderDao order = new OrderDao();
+	List<Order> orderList = order.getAllOrders();
+	List<Order> approvedList = new ArrayList<Order>();
+	List<Order> rejectedList = new ArrayList<Order>();
+	List<Order> pendingList = new ArrayList<Order>();
+	List<Order> outForDeliveryList = new ArrayList<Order>();
+	List<Order> deliveredList = new ArrayList<Order>();
+	if(orderList != null)
+	{
+		for(Order o : orderList)
+		{
+			if(o.getStatus().equals("Approved"))
+			{
+				approvedList.add(o);
+			}
+			else if(o.getStatus().equals("Rejected"))
+			{
+				rejectedList.add(o);
+			}
+			else if(o.getStatus().equals("Pending"))
+			{
+				pendingList.add(o);
+			}
+			else if(o.getStatus().equals("outForDelivery"))
+			{
+				outForDeliveryList.add(o);
+			}
+			else if(o.getStatus().equals("delivered"))
+			{
+				deliveredList.add(o);
+			}
+		}
+	}
+%>
+<h3 class="text-center orderHeading">This is orders</h3>
+<div class="drop-downList mt-5" id="pendingOrdersDiv">
+	<button class="drop-downBtn">Pending Orders <i onclick="openDropdown('pendingOrdersDiv')">open it</i></button>
+	<div class="drop-downContent" id="pendingOrdersDivdrop-downContent">
+		<div class="order-list">
+		<% 
+		if(pendingList.size() != 0)
+		{
+			for(Order pO : pendingList)
+			{
+		%>
+		<form action="AdminOrderController" method="post">
+		<div class="orders">
+		<input hidden=true value="<%= pO.getOrderId() %>" name="orderId"></input>
+			<h5 class="ms-3"><%= pO.getuId() %></h5>
+			<h5 class="ms-3"><%= pO.getSubCategory().getsName() %></h5>
+			<h6 style="position: absolute;top: 0; right: 48%">price = <%= pO.getSubCategory().getPrice() %></h6>
+			<h6 style="position: absolute;top: 20%; right: 48%"> order id = <%= pO.getOrderId() %></h6>
+			<h6 style="position: absolute;top: 0; right: 0" class="me-3">date</h6>
+			<hr>
+			<div class="text-center ">
+			<button type="submit" class="btn btn-outline-info ms-2 mb-2 orderBtns" name="orderBtns" value="Approved">approve</button>
+			<button type="submit" class="btn btn-outline-danger ms-2 mb-2 orderBtns" name="orderBtns" value="Rejected">reject</button>
+			<button type="submit" class="btn btn-outline-primary ms-2 mb-2 orderBtns" name="orderBtns" value="outForDelivery">out for delivery</button>
+			<button type="submit" class="btn btn-outline-success ms-2 mb-2 orderBtns" name="orderBtns" value="delivered">delivered</button>
+			</div>
+		</div>
+		</form>
+		
+	<% 		}
+		}
+	%>
+		</div>
+	</div>
+</div>
+ <div class="drop-downList mt-1" id="approvedOrdersDiv">
+	<button class="drop-downBtn">Approved Orders <i onclick="openDropdown('approvedOrdersDiv')">open it</i></button>
+	<div class="drop-downContent" id="approvedOrdersDivdrop-downContent">
+		<div class="order-list">
+		<% 
+		if(approvedList.size() != 0)
+		{
+			for(Order aO : approvedList)
+			{
+		%>
+		<form action="AdminOrderController" method="post">
+		<div class="orders">
+		<input hidden=true value="<%= aO.getOrderId() %>" name="orderId"></input>
+			<h5 class="ms-3"><%= aO.getuId() %></h5>
+			<h5 class="ms-3"><%= aO.getSubCategory().getsName() %></h5>
+			<h6 style="position: absolute;top: 0; right: 48%">price = <%= aO.getSubCategory().getPrice() %></h6>
+			<h6 style="position: absolute;top: 20%; right: 48%"> order id = <%= aO.getOrderId() %></h6>
+			<h6 style="position: absolute;top: 0; right: 0" class="me-3">date</h6>
+			<hr>
+			<div class="text-center ">
+			<button class="btn btn-outline-primary ms-2 mb-2 orderBtns" name="orderBtns" value="outForDelivery">out for delivery</button>
+			<button class="btn btn-outline-success ms-2 mb-2 orderBtns" name="orderBtns" value="delivered">delivered</button>
+			</div>
+		</div>
+	</form>
+		
+	<% 		}
+		}
+	%>
+	</div>
+	</div>
+</div>
+<div class="drop-downList mt-1" id="rejectedOrdersDiv">
+	<button class="drop-downBtn">Rejected Orders <i onclick="openDropdown('rejectedOrdersDiv')">open it</i></button>
+	<div class="drop-downContent" id="rejectedOrdersDivdrop-downContent">
+	<div class="order-list">
+		<% 
+		if(rejectedList.size() != 0)
+		{
+			for(Order rO : rejectedList)
+			{
+		%>
+		<div class="orders">
+			<h5 class="ms-3"><%= rO.getuId() %></h5>
+			<h5 class="ms-3"><%= rO.getSubCategory().getsName() %></h5>
+			<h6 style="position: absolute;top: 0; right: 48%">price = <%= rO.getSubCategory().getPrice() %></h6>
+			<h6 style="position: absolute;top: 20%; right: 48%"> order id = <%= rO.getOrderId() %></h6>
+			<h6 style="position: absolute;top: 0; right: 0" class="me-3">date</h6>
+		</div>
+		
+	<% 		}
+		}
+	%>
+	</div>
+	</div>
+</div>
+<div class="drop-downList mt-1" id="outForDeliveryOrdersDiv">
+	<button class="drop-downBtn">Out For Delivery<i onclick="openDropdown('outForDeliveryOrdersDiv')">open it</i></button>
+	<div class="drop-downContent" id="outForDeliveryOrdersDivdrop-downContent">
+		<div class="order-list">
+		<% 
+		if(outForDeliveryList.size() != 0)
+		{
+			for(Order outDO : outForDeliveryList)
+			{
+		%>
+		<form action="AdminOrderController" method="post">
+		<div class="orders">
+		<input hidden=true value="<%= outDO.getOrderId() %>" name="orderId"></input>
+			<h5 class="ms-3"><%= outDO.getuId() %></h5>
+			<h5 class="ms-3"><%= outDO.getSubCategory().getsName() %></h5>
+			<h6 style="position: absolute;top: 0; right: 48%">price = <%= outDO.getSubCategory().getPrice() %></h6>
+			<h6 style="position: absolute;top: 20%; right: 48%"> order id = <%= outDO.getOrderId() %></h6>
+			<h6 style="position: absolute;top: 0; right: 0" class="me-3">date</h6>
+			<hr>
+			<div class="text-center ">
+			<button class="btn btn-outline-success ms-2 mb-2 orderBtns" name="orderBtns" value="delivered">delivered</button>
+			</div>
+		</div>
+	</form>
+		
+	<% 		}
+		}
+	%>
+	</div>
+	</div>
+</div>
+<div class="drop-downList mt-1" id="deliveredOrdersDiv">
+	<button class="drop-downBtn">Out For Delivery<i onclick="openDropdown('deliveredOrdersDiv')">open it</i></button>
+	<div class="drop-downContent" id="deliveredOrdersDivdrop-downContent">
+		<div class="order-list">
+		<% 
+		if(deliveredList.size() != 0)
+		{
+			for(Order dO : deliveredList)
+			{
+		%>
+		<div class="orders">
+		<input hidden=true value="<%= dO.getOrderId() %>" name="orderId"></input>
+			<h5 class="ms-3"><%= dO.getuId() %></h5>
+			<h5 class="ms-3"><%= dO.getSubCategory().getsName() %></h5>
+			<h6 style="position: absolute;top: 0; right: 48%">price = <%= dO.getSubCategory().getPrice() %></h6>
+			<h6 style="position: absolute;top: 20%; right: 48%"> order id = <%= dO.getOrderId() %></h6>
+			<h6 style="position: absolute;top: 0; right: 0" class="me-3">date</h6>
+		</div>
+		
+	<% 		}
+		}
+	%>
+	</div>
+	</div>
+</div>
+
+ -->
