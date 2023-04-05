@@ -42,26 +42,6 @@ Overall, the system will provide an efficient way for the restaurant to manage i
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 
-
-* How to connect with a database in mysql workbench
-
-1)Open MySQL Workbench and click on the "Database" menu.
-
-2)Click on "Connect to Database" to open the "Setup New Connection" dialog box.
-
-3)In the "Setup New Connection" dialog box, enter the following details:
-
-.)Connection Name: A descriptive name for your connection.
-.)Hostname: The hostname or IP address of the MySQL server you want to connect to.
-.)Port: The port number that MySQL is running on (usually 3306).
-.)Username: Your MySQL username.
-.)Password: Your MySQL password.
-.)Click on the "Test Connection" button to verify that the connection details are correct. If the connection is successful, you .)will see a message indicating that the connection was successful.
-
-4)Click on the "OK" button to save the connection details and connect to the database.
-Once you have successfully connected to the database, you can start working with it in MySQL Workbench. You can create and manage databases, tables, and data, and perform various other operations on the database using the various tools and features provided by MySQL Workbench.
-
-
 ### Prerequisites
 What things you need to install the software and how to install them.
 
@@ -137,36 +117,33 @@ That's it! You have successfully installed Apache Tomcat Server 9.0 in Eclipse. 
 6)Once the installation is complete, click "Next" and then "Finish".
 
 7)To start MySQL Workbench, go to the Windows Start menu and search for "MySQL Workbench". Click on the application to open it.
-
 That's it! MySQL Workbench should now be installed on your Windows machine and ready to use. You can now use it to manage your MySQL databases.
 
 
 ## how to install java development kit(JDK) 1.8
 
-Go to the Oracle JDK download page: https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+1)Go to the Oracle JDK download page: https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 
-Accept the license agreement by clicking on the "Accept License Agreement" radio button.
+2)Accept the license agreement by clicking on the "Accept License Agreement" radio button.
 
-Download the appropriate JDK installation file for your operating system. For Windows, you will want to download the "Windows x64" installer.
+3)Download the appropriate JDK installation file for your operating system. For Windows, you will want to download the "Windows x64" installer.
 
-Once the download is complete, double-click on the downloaded file to start the installation process.
+4)Once the download is complete, double-click on the downloaded file to start the installation process.
 
-In the installation wizard, select "Next" to begin the installation process.
+5)In the installation wizard, select "Next" to begin the installation process.
 
-Choose the installation directory where you want to install JDK and click "Next".
+6)Choose the installation directory where you want to install JDK and click "Next".
 
-Select the components you want to install, including the Java Development Kit (JDK), and click "Next".
+7)Select the components you want to install, including the Java Development Kit (JDK), and click "Next".
 
-Select the installation type and click "Next". It is recommended to choose the default option which is "Typical".
+8)Select the installation type and click "Next". It is recommended to choose the default option which is "Typical".
 
-Choose whether to install Java updates automatically or not, and click "Next".
+9)Choose whether to install Java updates automatically or not, and click "Next".
 
-Click "Install" to start the installation process.
+10)Click "Install" to start the installation process.
 
-Wait for the installation to complete. Once it is finished, click "Close" to exit the installer.
-
+11)Wait for the installation to complete. Once it is finished, click "Close" to exit the installer.
 To verify that JDK 1.8 has been installed correctly, open a command prompt and type "java -version". You should see a message that shows the version number of the installed JDK.
-
 That's it! You have successfully installed JDK 1.8 on your Windows machine.
 
 
@@ -175,78 +152,85 @@ That's it! You have successfully installed JDK 1.8 on your Windows machine.
 
 Add notes about how to use the system.
 
-* process of run the project on your system
-Make sure that you have Apache Tomcat Server installed and configured in Eclipse as mentioned in the down below.
+* process of run the project on your system are as follow :
+To run an existing project with Tomcat server in Eclipse, follow these steps:
 
-Open Eclipse and switch to the Java EE perspective. You can do this by clicking on "Window" -> "Perspective" -> "Open Perspective" -> "Java EE".
+1)Make sure that you have Apache Tomcat Server installed and configured in Eclipse as mentioned in the previous answer.
 
-In the "Project Explorer" view, locate the project you want to run.
+2)Open Eclipse and switch to the Java EE perspective. You can do this by clicking on "Window" -> "Perspective" -> "Open Perspective" -> "Java EE".
 
-Right-click on the project and select "Properties" from the context menu.
+3)In the "Project Explorer" view, locate the project you want to run.
 
-In the "Properties" window, select "Project Facets" from the left-hand menu.
+4)Right-click on the project and select "Properties" from the context menu.
 
-In the "Project Facets" view, make sure that "Dynamic Web Module" is checked. If it is not checked, check it and click "Apply" and then "OK".
+5)In the "Properties" window, select "Project Facets" from the left-hand menu.
 
-Right-click on the project again and select "Run As" -> "Run on Server" from the context menu.
+6)In the "Project Facets" view, make sure that "Dynamic Web Module" is checked. If it is not checked, check it and click "Apply" and then "OK".
 
-In the "Run on Server" wizard, select the server you want to run the project on (in this case, Apache Tomcat Server 9.0) and click "Next".
+7)Right-click on the project again and select "Run As" -> "Run on Server" from the context menu.
 
-In the "Add and Remove" dialog, add the project to the list of selected projects and click "Finish".
+8)In the "Run on Server" wizard, select the server you want to run the project on (in this case, Apache Tomcat Server 9.0) and click "Next".
 
-Eclipse will start the server and deploy the project on it. You should see the project running in your default web browser.
+9)In the "Add and Remove" dialog, add the project to the list of selected projects and click "Finish".
+
+10)Eclipse will start the server and deploy the project on it. You should see the project running in your default web browser.
+
+That's it! You have successfully run an existing project with Tomcat server in Eclipse.
 
 
 * How to connect with a database in mysql workbench
 
-Open MySQL Workbench and click on the "Database" menu.
+1)Open MySQL Workbench and click on the "Database" menu.
 
-Click on "Connect to Database" to open the "Setup New Connection" dialog box.
+2)Click on "Connect to Database" to open the "Setup New Connection" dialog box.
 
-In the "Setup New Connection" dialog box, enter the following details:
+3)In the "Setup New Connection" dialog box, enter the following details:
 
-Connection Name: A descriptive name for your connection.
-Hostname: The hostname or IP address of the MySQL server you want to connect to.
-Port: The port number that MySQL is running on (usually 3306).
-Username: Your MySQL username.
-Password: Your MySQL password.
-Click on the "Test Connection" button to verify that the connection details are correct. If the connection is successful, you will see a message indicating that the connection was successful.
+.)Connection Name: A descriptive name for your connection.
 
-Click on the "OK" button to save the connection details and connect to the database.
+.)Hostname: The hostname or IP address of the MySQL server you want to connect to.
 
+.)Port: The port number that MySQL is running on (usually 3306).
+
+.)Username: Your MySQL username.
+
+.)Password: Your MySQL password.
+
+.)Click on the "Test Connection" button to verify that the connection details are correct. If the connection is successful, you .)will see a message indicating that the connection was successful.
+
+4)Click on the "OK" button to save the connection details and connect to the database.
 Once you have successfully connected to the database, you can start working with it in MySQL Workbench. You can create and manage databases, tables, and data, and perform various other operations on the database using the various tools and features provided by MySQL Workbench.
-
 
 
 ## 🚀 Deployment <a name = "deployment"></a>
 For this thing we need a 1.8 jdk install in your system.
+
 ## here is the step to set 1.8 jdk in your system
 To set the JDK version to 1.8 in Eclipse, follow these steps:
 
-Make sure that you have the JDK 1.8 installed on your system. You can download it from the official Oracle website.
+1)Make sure that you have the JDK 1.8 installed on your system. You can download it from the official Oracle website.
 
-Open Eclipse and go to "Window" -> "Preferences".
+2)Open Eclipse and go to "Window" -> "Preferences".
 
-In the Preferences window, expand the "Java" folder and click on "Installed JREs".
+3)In the Preferences window, expand the "Java" folder and click on "Installed JREs".
 
-Click on the "Add" button to add a new JRE.
+4)Click on the "Add" button to add a new JRE.
 
-In the "Add JRE" window, select "Standard VM" and click "Next".
+5)In the "Add JRE" window, select "Standard VM" and click "Next".
 
-In the "JRE Definition" window, enter a name for the JRE (e.g., "JDK 1.8") and select the installation directory of the JDK 1.8.
+6)In the "JRE Definition" window, enter a name for the JRE (e.g., "JDK 1.8") and select the installation directory of the JDK 1.8.
 
-Click on "Finish" to add the new JRE.
+7)Click on "Finish" to add the new JRE.
 
-Select the newly added JRE in the "Installed JREs" window and click on the "Edit" button.
+8)Select the newly added JRE in the "Installed JREs" window and click on the "Edit" button.
 
-In the "Edit JRE" window, click on the "Add External JARs" button and navigate to the "lib" directory of the JDK 1.8 installation.
+9)In the "Edit JRE" window, click on the "Add External JARs" button and navigate to the "lib" directory of the JDK 1.8 installation.
 
-Select all the JAR files in the "lib" directory and click on "Open".
+10)Select all the JAR files in the "lib" directory and click on "Open".
 
-Click on "Finish" to save the changes.
+11)Click on "Finish" to save the changes.
 
-Click on "OK" to close the Preferences window.
-
+12)Click on "OK" to close the Preferences window.
 That's it! You have successfully set the JDK version to 1.8 in Eclipse. Now you can create new projects and run existing ones using JDK 1.8.
 
 
@@ -255,15 +239,19 @@ That's it! You have successfully set the JDK version to 1.8 in Eclipse. Now you 
 
 ![bg width:1000px](./swagindiaflowchart.png)
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+
+- [HTML,CSS] - Front-end
+- [Java,jsp,servlet] - Back-end
+- [MySql](https://www.mysql.com/) - Database
+- [Tomcat](https://tomcat.apache.org/) - localhost Server 
+
 
 ## ✍️ Authors <a name = "authors"></a>
 this project develped in a group of two person:-
-1)shivani kashyap(front end and backend)
-2)prit shah(backend)
+1)shivani kashyap
+
+2)prit shah
+Link:- https://github.com/prit2810
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 - Hat tip to anyone whose code was used
