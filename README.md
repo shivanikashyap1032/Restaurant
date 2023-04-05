@@ -258,10 +258,11 @@ Link:- https://github.com/prit2810
 * As an student, I do not copy code from specific individuals or sources. Instead, I generate responses based on the algorithms and models trained on a vast corpus of data. However, it is always good practice to acknowledge the work of others if you have used their code or ideas in your own work. This helps to give credit where it's due and to avoid plagiarism. So, if you have used someone else's code, it is important to cite the source and give proper attribution.
 
 - Inspiration
-* Online Ordering System: You could build a web application that allows customers to order food online from the restaurant. The application could use servlets and JSPs to manage the ordering process, from selecting items from the menu to entering payment information.
+.) Online Ordering System: You could build a web application that allows customers to order food online from the restaurant. The application could use servlets and JSPs to manage the ordering process, from selecting items from the menu to entering payment information.
 also you save your time insted of going hotel and book a table.
 
 - References
+
 1)Restaurant Management System using Java - This is a GitHub repository containing the source code for a restaurant management system using Java. It covers topics such as customer ordering, inventory management, and billing. 
 Link: https://github.com/madhavipatil6/Restaurant-Management-System-using-Java
 
