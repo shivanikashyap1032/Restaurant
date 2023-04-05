@@ -263,7 +263,7 @@ Link:- https://github.com/prit2810
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 - Hat tip to anyone whose code was used
-* As an student, I do not copy code from specific individuals or sources. Instead, I generate responses based on the algorithms and models trained on a vast corpus of data. However, it is always good practice to acknowledge the work of others if you have used their code or ideas in your own work. This helps to give credit where it's due and to avoid plagiarism. So, if you have used someone else's code, it is important to cite the source and give proper attribution.
+.) As an student, I do not copy code from specific individuals or sources. Instead, I generate responses based on the algorithms and models trained on a vast corpus of data. However, it is always good practice to acknowledge the work of others if you have used their code or ideas in your own work. This helps to give credit where it's due and to avoid plagiarism. So, if you have used someone else's code, it is important to cite the source and give proper attribution.
 
 - Inspiration
 .) Online Ordering System: You could build a web application that allows customers to order food online from the restaurant. The application could use servlets and JSPs to manage the ordering process, from selecting items from the menu to entering payment information.
