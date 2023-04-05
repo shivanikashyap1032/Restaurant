@@ -45,21 +45,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 * How to connect with a database in mysql workbench
 
-Open MySQL Workbench and click on the "Database" menu.
+1)Open MySQL Workbench and click on the "Database" menu.
 
-Click on "Connect to Database" to open the "Setup New Connection" dialog box.
+2)Click on "Connect to Database" to open the "Setup New Connection" dialog box.
 
-In the "Setup New Connection" dialog box, enter the following details:
+3)In the "Setup New Connection" dialog box, enter the following details:
 
-Connection Name: A descriptive name for your connection.
-Hostname: The hostname or IP address of the MySQL server you want to connect to.
-Port: The port number that MySQL is running on (usually 3306).
-Username: Your MySQL username.
-Password: Your MySQL password.
-Click on the "Test Connection" button to verify that the connection details are correct. If the connection is successful, you will see a message indicating that the connection was successful.
+.)Connection Name: A descriptive name for your connection.
+.)Hostname: The hostname or IP address of the MySQL server you want to connect to.
+.)Port: The port number that MySQL is running on (usually 3306).
+.)Username: Your MySQL username.
+.)Password: Your MySQL password.
+.)Click on the "Test Connection" button to verify that the connection details are correct. If the connection is successful, you .)will see a message indicating that the connection was successful.
 
-Click on the "OK" button to save the connection details and connect to the database.
-
+4)Click on the "OK" button to save the connection details and connect to the database.
 Once you have successfully connected to the database, you can start working with it in MySQL Workbench. You can create and manage databases, tables, and data, and perform various other operations on the database using the various tools and features provided by MySQL Workbench.
 
 
