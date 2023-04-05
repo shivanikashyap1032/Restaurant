@@ -243,7 +243,7 @@ That's it! You have successfully set the JDK version to 1.8 in Eclipse. Now you 
 
 ## ⛏️ Flow Chart <a name = "flowchart"></a>
 
-![bg width:1000px](FlowChart.png)
+![bg width:100px](FlowChart.png)
 
 
 - [HTML,CSS] - Front-end
