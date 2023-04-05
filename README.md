@@ -158,6 +158,7 @@ That's it! You have successfully installed JDK 1.8 on your Windows machine.
 Add notes about how to use the system.
 
 * process of run the project on your system are as follow :
+
 To run an existing project with Tomcat server in Eclipse, follow these steps:
 
 1)Make sure that you have Apache Tomcat Server installed and configured in Eclipse as mentioned in the previous answer.
@@ -211,7 +212,7 @@ Once you have successfully connected to the database, you can start working with
 For this thing we need a 1.8 jdk install in your system.
 
 ## here is the step to set 1.8 jdk in your system
-To set the JDK version to 1.8 in Eclipse, follow these steps:
+To set the JDK version to 1.8 in Eclipse follow these steps:
 
 1)Make sure that you have the JDK 1.8 installed on your system. You can download it from the official Oracle website.
 
